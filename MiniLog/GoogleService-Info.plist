@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>313070447705-ol0vg7j923oi0u1jne634av95931ehob.apps.googleusercontent.com</string>
+	<string>230136812517-8nom84vnf7v4jg6j32g3vbrft678pknt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.313070447705-ol0vg7j923oi0u1jne634av95931ehob</string>
+	<string>com.googleusercontent.apps.230136812517-8nom84vnf7v4jg6j32g3vbrft678pknt</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAYbllPHSou6djQQ1Qqlo_gKmNel01IoZo</string>
+	<string>AIzaSyBgPq2Oh_I3KdbLl6CWalCWmLrrDCh_OR8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>313070447705</string>
+	<string>230136812517</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Example.HowlTalk</string>
+	<string>Example.MiniLog</string>
 	<key>PROJECT_ID</key>
-	<string>howltalk-8bc4c</string>
+	<string>minilog-73be7</string>
 	<key>STORAGE_BUCKET</key>
-	<string>howltalk-8bc4c.appspot.com</string>
+	<string>minilog-73be7.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:313070447705:ios:aa4f2e31fd677753075548</string>
+	<string>1:230136812517:ios:eb603b74be8f4c52eed50c</string>
 	<key>DATABASE_URL</key>
-	<string>https://howltalk-8bc4c.firebaseio.com</string>
+	<string>https://minilog-73be7.firebaseio.com</string>
 </dict>
 </plist>

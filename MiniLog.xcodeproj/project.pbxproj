@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,8 @@
 		12AFCF7824CD3B6B00A19F18 /* MiniLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF7724CD3B6B00A19F18 /* MiniLogUITests.swift */; };
 		12AFCF8624CD3E4600A19F18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF8524CD3E4600A19F18 /* LoginViewController.swift */; };
 		12AFCF8824CD3E5100A19F18 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF8724CD3E5100A19F18 /* SignUpViewController.swift */; };
-		12C7524024CD45B000EF986A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C7523F24CD45B000EF986A /* GoogleService-Info.plist */; };
+		12C7524524CD602500EF986A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7524424CD602500EF986A /* UserModel.swift */; };
+		12C7524724CD697800EF986A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C7524624CD697800EF986A /* GoogleService-Info.plist */; };
 		A914F740EDDF0A44A44A6FFE /* Pods_MiniLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F397657B5A4B43AA57B7D2 /* Pods_MiniLog.framework */; };
 		E3DFC9A39A9D1BC92ADD53C9 /* Pods_MiniLogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5615484BB1BEE80000CCAD6D /* Pods_MiniLogTests.framework */; };
 		F74EB6C3B5A11A90174BD88F /* Pods_MiniLog_MiniLogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C43B69A78F1AF22E1AFE8 /* Pods_MiniLog_MiniLogUITests.framework */; };
@@ -58,7 +59,8 @@
 		12AFCF7924CD3B6B00A19F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12AFCF8524CD3E4600A19F18 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12AFCF8724CD3E5100A19F18 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		12C7523F24CD45B000EF986A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12C7524424CD602500EF986A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		12C7524624CD697800EF986A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39B86ABFF361B868A25E5231 /* Pods-MiniLog-MiniLogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniLog-MiniLogUITests.release.xcconfig"; path = "Target Support Files/Pods-MiniLog-MiniLogUITests/Pods-MiniLog-MiniLogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4FA75F43CDABB27D3ADDA48B /* Pods-MiniLog-MiniLogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniLog-MiniLogUITests.debug.xcconfig"; path = "Target Support Files/Pods-MiniLog-MiniLogUITests/Pods-MiniLog-MiniLogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5615484BB1BEE80000CCAD6D /* Pods_MiniLogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniLogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 		12AFCF5424CD3B6600A19F18 /* MiniLog */ = {
 			isa = PBXGroup;
 			children = (
+				12C7524124CD5FF600EF986A /* Model */,
 				12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */,
 				12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */,
 				12AFCF5924CD3B6600A19F18 /* ViewController.swift */,
@@ -131,7 +134,7 @@
 				12AFCF6324CD3B6B00A19F18 /* Info.plist */,
 				12AFCF8524CD3E4600A19F18 /* LoginViewController.swift */,
 				12AFCF8724CD3E5100A19F18 /* SignUpViewController.swift */,
-				12C7523F24CD45B000EF986A /* GoogleService-Info.plist */,
+				12C7524624CD697800EF986A /* GoogleService-Info.plist */,
 			);
 			path = MiniLog;
 			sourceTree = "<group>";
@@ -154,6 +157,14 @@
 			path = MiniLogUITests;
 			sourceTree = "<group>";
 		};
+		12C7524124CD5FF600EF986A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12C7524424CD602500EF986A /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3557471B1EF6B5A0260FF93A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +185,6 @@
 				C1AEC6AA1AFF5B95BB98990F /* Pods-MiniLogTests.debug.xcconfig */,
 				FD8356F930873840A4008FDB /* Pods-MiniLogTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -288,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12AFCF6224CD3B6A00A19F18 /* LaunchScreen.storyboard in Resources */,
-				12C7524024CD45B000EF986A /* GoogleService-Info.plist in Resources */,
+				12C7524724CD697800EF986A /* GoogleService-Info.plist in Resources */,
 				12AFCF5F24CD3B6A00A19F18 /* Assets.xcassets in Resources */,
 				12AFCF5D24CD3B6600A19F18 /* Main.storyboard in Resources */,
 			);
@@ -422,6 +432,7 @@
 				12AFCF5A24CD3B6600A19F18 /* ViewController.swift in Sources */,
 				12AFCF5624CD3B6600A19F18 /* AppDelegate.swift in Sources */,
 				12AFCF5824CD3B6600A19F18 /* SceneDelegate.swift in Sources */,
+				12C7524524CD602500EF986A /* UserModel.swift in Sources */,
 				12AFCF8824CD3E5100A19F18 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

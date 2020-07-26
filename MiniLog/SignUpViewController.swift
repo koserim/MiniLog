@@ -7,24 +7,56 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        signUpButton.addTarget(self, action: #selector(signUpEvent), for: .touchUpInside)
     }
     
+    @objc func signUpEvent() {
+        if let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text {
+            if email == "" || password == "" || name == "" {
+                self.showErrorAlert(status: "fillError")
+            } else {
+                Auth.auth().createUser(withEmail: email, password: password) { (user, err) in
+                    let uid = user?.user.uid
+                    if(err == nil) {
+                        Database.database().reference().child("users").child(uid!).setValue(["email": email, "name": name], withCompletionBlock: { (err, ref) in
+                            if(err == nil) {
+                                self.dismiss(animated: true, completion: nil)
+                            } else {
+                                self.showErrorAlert(status: "defaultError")
+                            }
+                        })
+                    } else {
+                        self.showErrorAlert(status: "defaultError")
+                    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                }
+            }
+        } else {
+            self.showErrorAlert(status: "defaultError")
+        }
     }
-    */
 
+    func showErrorAlert(status: String) {
+        var message: String?
+        if(status == "defaultError") {
+            message = "다시 시도해주세요."
+        } else if(status == "fillError") {
+            message = "모든 항목을 채워주세요."
+        }
+        let alertController = UIAlertController(title: "회원가입 오류", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }
