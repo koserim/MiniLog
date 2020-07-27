@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  TimelineViewController.swift
 //  MiniLog
 //
 //  Created by 바보세림이 on 2020/07/26.
@@ -7,18 +7,12 @@
 //
 
 import UIKit
-import Firebase
 
-class LoginViewController: UIViewController {
+class TimelineViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signUpButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     

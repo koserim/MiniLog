@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -24,7 +25,7 @@ class SignUpViewController: UIViewController {
     @objc func signUpEvent() {
         if let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text {
             if email == "" || password == "" || name == "" {
-                self.showErrorAlert(status: "fillError")
+                self.showErrorAlert("fillError")
             } else {
                 Auth.auth().createUser(withEmail: email, password: password) { (user, err) in
                     let uid = user?.user.uid
@@ -33,23 +34,23 @@ class SignUpViewController: UIViewController {
                             if(err == nil) {
                                 self.dismiss(animated: true, completion: nil)
                             } else {
-                                self.showErrorAlert(status: "defaultError")
+                                self.showErrorAlert(nil)
                             }
                         })
                     } else {
-                        self.showErrorAlert(status: "defaultError")
+                        self.showErrorAlert(nil)
                     }
 
                 }
             }
         } else {
-            self.showErrorAlert(status: "defaultError")
+            self.showErrorAlert(nil)
         }
     }
 
-    func showErrorAlert(status: String) {
+    func showErrorAlert(_ status: String?) {
         var message: String?
-        if(status == "defaultError") {
+        if(status == nil) {
             message = "다시 시도해주세요."
         } else if(status == "fillError") {
             message = "모든 항목을 채워주세요."
