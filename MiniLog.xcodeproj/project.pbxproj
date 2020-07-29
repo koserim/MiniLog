@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1208995624D0EEE900797C38 /* TimelineTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208995524D0EEE900797C38 /* TimelineTableView.swift */; };
 		12AFCF5624CD3B6600A19F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */; };
 		12AFCF5824CD3B6600A19F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */; };
 		12AFCF5A24CD3B6600A19F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5924CD3B6600A19F18 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		078C43B69A78F1AF22E1AFE8 /* Pods_MiniLog_MiniLogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniLog_MiniLogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1208995524D0EEE900797C38 /* TimelineTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableView.swift; sourceTree = "<group>"; };
 		12AFCF5224CD3B6600A19F18 /* MiniLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1208995724D0EF3300797C38 /* TimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				12C7524824CD881E00EF986A /* TimelineViewController.swift */,
+				1208995524D0EEE900797C38 /* TimelineTableView.swift */,
+			);
+			path = TimelineView;
+			sourceTree = "<group>";
+		};
 		12AFCF4924CD3B6600A19F18 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +137,7 @@
 		12AFCF5424CD3B6600A19F18 /* MiniLog */ = {
 			isa = PBXGroup;
 			children = (
+				1208995724D0EF3300797C38 /* TimelineView */,
 				12C7524124CD5FF600EF986A /* Model */,
 				12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */,
 				12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */,
@@ -137,7 +149,6 @@
 				12AFCF8524CD3E4600A19F18 /* LogInViewController.swift */,
 				12AFCF8724CD3E5100A19F18 /* SignUpViewController.swift */,
 				12C7524624CD697800EF986A /* GoogleService-Info.plist */,
-				12C7524824CD881E00EF986A /* TimelineViewController.swift */,
 			);
 			path = MiniLog;
 			sourceTree = "<group>";
@@ -435,6 +446,7 @@
 				12AFCF5A24CD3B6600A19F18 /* ViewController.swift in Sources */,
 				12AFCF5624CD3B6600A19F18 /* AppDelegate.swift in Sources */,
 				12AFCF5824CD3B6600A19F18 /* SceneDelegate.swift in Sources */,
+				1208995624D0EEE900797C38 /* TimelineTableView.swift in Sources */,
 				12C7524924CD881E00EF986A /* TimelineViewController.swift in Sources */,
 				12C7524524CD602500EF986A /* UserModel.swift in Sources */,
 				12AFCF8824CD3E5100A19F18 /* SignUpViewController.swift in Sources */,

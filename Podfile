@@ -9,6 +9,7 @@ target 'MiniLog' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'SnapKit', '~> 5.0.0'
   target 'MiniLogTests' do
     inherit! :search_paths
     # Pods for testing
