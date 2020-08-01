@@ -10,6 +10,7 @@ target 'MiniLog' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Kingfisher', '~> 5.14.1'
   target 'MiniLogTests' do
     inherit! :search_paths
     # Pods for testing

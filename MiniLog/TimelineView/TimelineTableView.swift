@@ -10,8 +10,10 @@ import UIKit
 
 class TimelineTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
+    var allPosts: [PostModel] = []
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return allPosts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -19,10 +21,12 @@ class TimelineTableView: UITableView, UITableViewDelegate, UITableViewDataSource
         return cell
     }
 
+
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.delegate = self
         self.dataSource = self
+        self.backgroundColor = UIColor.purple
     }
     
     required init?(coder: NSCoder) {

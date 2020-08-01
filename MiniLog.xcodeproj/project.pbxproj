@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1208995624D0EEE900797C38 /* TimelineTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208995524D0EEE900797C38 /* TimelineTableView.swift */; };
+		12089A6824D462BD00797C38 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12089A6724D462BD00797C38 /* TimelineTableViewCell.swift */; };
+		12089A6A24D4633700797C38 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12089A6924D4633700797C38 /* PostModel.swift */; };
 		12AFCF5624CD3B6600A19F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */; };
 		12AFCF5824CD3B6600A19F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */; };
 		12AFCF5A24CD3B6600A19F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AFCF5924CD3B6600A19F18 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		078C43B69A78F1AF22E1AFE8 /* Pods_MiniLog_MiniLogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniLog_MiniLogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1208995524D0EEE900797C38 /* TimelineTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableView.swift; sourceTree = "<group>"; };
+		12089A6724D462BD00797C38 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		12089A6924D4633700797C38 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		12AFCF5224CD3B6600A19F18 /* MiniLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AFCF5524CD3B6600A19F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12AFCF5724CD3B6600A19F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			children = (
 				12C7524824CD881E00EF986A /* TimelineViewController.swift */,
 				1208995524D0EEE900797C38 /* TimelineTableView.swift */,
+				12089A6724D462BD00797C38 /* TimelineTableViewCell.swift */,
 			);
 			path = TimelineView;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				12C7524424CD602500EF986A /* UserModel.swift */,
+				12089A6924D4633700797C38 /* PostModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -443,6 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12AFCF8624CD3E4600A19F18 /* LogInViewController.swift in Sources */,
+				12089A6A24D4633700797C38 /* PostModel.swift in Sources */,
+				12089A6824D462BD00797C38 /* TimelineTableViewCell.swift in Sources */,
 				12AFCF5A24CD3B6600A19F18 /* ViewController.swift in Sources */,
 				12AFCF5624CD3B6600A19F18 /* AppDelegate.swift in Sources */,
 				12AFCF5824CD3B6600A19F18 /* SceneDelegate.swift in Sources */,
